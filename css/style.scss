@@ -1,3 +1,21 @@
+@import './variables';
+
 body {
-    background: purple;
+    background-color: $lgtGray;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.card-container {
+    
+    flex: 1;
+}
+
+.card-column {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
