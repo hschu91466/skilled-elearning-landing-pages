@@ -14,7 +14,7 @@ body {
 .page-container {
   margin: 0;
   padding: 0;
-  background: rgb(213, 245, 249);
+  background: linear-gradient(to bottom, #ffffff, f0f1ff);
 }
 
 .content-container {
@@ -54,14 +54,28 @@ body {
   left: 20px;
 }
 
+.call-out {
+  background: linear-gradient(to bottom, $lgradOrange, $lgradPink);
+  font-family: $primaryFont;
+  font-size: 24px;
+  font-weight: 700;
+  color: $White;
+  border-radius: 10px;
+}
+
 .footer-container {
-  background: rgb(222, 222, 245);
+  height: 120px;
+  background: $dkBlue;
+  color: $White;
 }
 
 /*  Defaults to Small devices (landscape phones, 767px and below) */
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
+  .content-container {
+    margin: 0 6em;
+  }
   .hero-image-container {
     position: absolute;
     min-width: 100%;
@@ -73,16 +87,19 @@ body {
     float: right;
     position: relative;
 
-    margin-right: -350px;
-    margin-top: -220px;
+    margin-right: -65%;
+    margin-top: -15%;
   }
-  .page-container {
-    background: rgb(249, 198, 221);
-  }
+  // .page-container {
+  //   background: rgb(249, 198, 221);
+  // }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+  .content-container {
+    margin: 0 6em;
+  }
   .hero-image-container {
     position: absolute;
     min-width: 100%;
@@ -93,16 +110,19 @@ body {
     float: right;
     position: relative;
     max-width: 991px;
-    margin-right: -340px;
-    margin-top: -290px;
+    margin-right: -50%;
+    margin-top: -20%;
   }
-  .page-container {
-    background: rgb(252, 218, 200);
-  }
+  // .page-container {
+  //   background: rgb(252, 218, 200);
+  // }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
+  .content-container {
+    margin: 0 6em;
+  }
   .hero-image-container {
     position: absolute;
     margin: 0;
@@ -116,11 +136,11 @@ body {
     float: right;
     position: relative;
     max-width: 991px;
-    margin-right: -340px;
-    margin-top: -290px;
+    margin-right: -50%;
+    margin-top: -20%;
   }
   .page-container {
-    background: rgb(213, 245, 249);
+    // background: rgb(213, 245, 249);
     max-width: 100%;
     position: absolute;
   }
