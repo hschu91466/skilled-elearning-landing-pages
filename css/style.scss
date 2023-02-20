@@ -30,7 +30,7 @@ body {
   width: 100%;
   position: relative;
   height: auto;
-  content: url(/images/image-hero-mobile.webp);
+  content: url(../images/image-hero-mobile.webp);
 }
 
 .card-container {
@@ -83,7 +83,7 @@ body {
   }
 
   #hero-image {
-    content: url(/images/image-hero-tablet.webp) !important;
+    content: url(../images/image-hero-tablet.webp) !important;
     float: right;
     position: relative;
 
@@ -106,7 +106,7 @@ body {
     overflow: hidden;
   }
   #hero-image {
-    content: url(/images/image-hero-desktop.webp) !important;
+    content: url(../images/image-hero-desktop.webp) !important;
     float: right;
     position: relative;
     max-width: 991px;
@@ -132,7 +132,7 @@ body {
     overflow: hidden;
   }
   #hero-image {
-    content: url(/images/image-hero-desktop.webp) !important;
+    content: url(../images/image-hero-desktop.webp) !important;
     float: right;
     position: relative;
     max-width: 991px;
