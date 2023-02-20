@@ -10,6 +10,25 @@ body {
   padding: 0;
 }
 
+.nav-container {
+  height: 120px;
+  align-items: center;
+}
+
+#nav-text {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 28px;
+}
+
+#top-btn {
+  background: hsl(234, 25%, 52%);
+  border-radius: 25px;
+  border: none;
+  height: 56px;
+  width: 167px;
+  color: hsl(0, 0%, 100%);
+}
+
 .page-container {
   margin: 0;
   padding: 0;
@@ -20,9 +39,15 @@ body {
   margin: 0 1em;
 }
 
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .hero-image-container {
   position: absolute;
   min-width: 100%;
+  border: 2px solid red;
 }
 
 #hero-image {
@@ -80,11 +105,15 @@ body {
     overflow: hidden;
   }
   #hero-image {
-    content: url(../images/image-hero-tablet.webp) !important;
-    float: right;
+    width: 100%;
     position: relative;
-    margin-right: -65%;
-    margin-top: -15%;
+    height: auto;
+    content: url(../images/image-hero-tablet.webp);
+    top: -76px;
+    right: -135px;
+  }
+  .page-container {
+    background: rgb(249, 198, 221);
   }
 }
 /* Large devices (desktops, 992px and up) */
@@ -98,12 +127,15 @@ body {
     overflow: hidden;
   }
   #hero-image {
-    content: url(../images/image-hero-desktop.webp) !important;
-    float: right;
+    width: 100%;
     position: relative;
-    max-width: 991px;
-    margin-right: -50%;
-    margin-top: -20%;
+    height: auto;
+    content: url(../images/image-hero-desktop.webp);
+    top: -76px;
+    right: -135px;
+  }
+  .page-container {
+    background: rgb(176, 216, 176);
   }
 }
 /* Extra large devices (large desktops, 1200px and up) */
@@ -113,23 +145,21 @@ body {
   }
   .hero-image-container {
     position: absolute;
-    margin: 0;
-    padding: 0;
-    top: 0;
-    min-width: 100vw;
+    max-width: 100%;
     overflow: hidden;
   }
   #hero-image {
-    content: url(../images/image-hero-desktop.webp) !important;
-    float: right;
+    width: 100%;
     position: relative;
-    max-width: 991px;
-    margin-right: -50%;
-    margin-top: -20%;
+    height: auto;
+    content: url(../images/image-hero-desktop.webp);
+    top: -115px;
+    right: -385px;
   }
   .page-container {
+    background: rgb(167, 207, 219);
     max-width: 100%;
-    position: absolute;
+    overflow: hidden;
   }
 }
 
