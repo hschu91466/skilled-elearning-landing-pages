@@ -14,18 +14,17 @@ body {
 
 .nav-container {
   height: 120px;
-
   align-items: center;
 }
 
 #nav-text {
   font-family: $primaryFont;
-  font-size: 28px;
+  font-size: 1.74rem;
 }
 
 #top-btn {
   background: $purple;
-  border-radius: 25px;
+  border-radius: 1.75em;
   border: none;
   height: 56px;
   width: 167px;
@@ -50,11 +49,10 @@ body {
 .hero-image-container {
   position: absolute;
   min-width: 100%;
-  border: 2px solid red;
 }
 
 #hero-image {
-  width: 100%;
+  width: 20.44em;
   position: relative;
   height: auto;
   content: url(../images/image-hero-mobile.webp);
@@ -104,6 +102,11 @@ body {
     margin: 0 6em;
   }
 
+  #top-btn {
+    height: 3em;
+    width: 8.75em;
+  }
+
   .hero-image-container {
     position: absolute;
     min-width: 100%;
@@ -111,17 +114,18 @@ body {
   }
 
   #hero-image {
-    width: 100%;
+
     position: relative;
     height: auto;
+    width: 40em;
     content: url(../images/image-hero-tablet.webp);
-    top: -76px;
-    right: -135px;
+    top: -14.76em;
+    right: -1.39em;
   }
 
-  .page-container {
-    background: rgb(249, 198, 221);
-  }
+  // .page-container {
+  //   background: rgb(249, 198, 221);
+  // }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -137,12 +141,13 @@ body {
   }
 
   #hero-image {
-    width: 100%;
+
     position: relative;
     height: auto;
+    width: 61.97rem;
     content: url(../images/image-hero-desktop.webp);
-    top: -76px;
-    right: -135px;
+    top: -9.133em;
+    right: -20.98em;
   }
 
   .page-container {
@@ -163,16 +168,16 @@ body {
   }
 
   #hero-image {
-    width: 100%;
+    width: 61.97em;
     position: relative;
     height: auto;
     content: url(../images/image-hero-desktop.webp);
-    top: -115px;
-    right: -385px;
+    top: -9.133em;
+    right: -20.98em;
   }
 
   .page-container {
-    background: rgb(167, 207, 219);
+    // background: rgb(167, 207, 219);
     max-width: 100%;
     overflow: hidden;
   }
