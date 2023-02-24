@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: linear-gradient(to bottom, #ffffff, #f0f1ff);
+  background: linear-gradient(to bottom, #ffffff, #f0f1ff);
 }
 
 button {
@@ -90,10 +90,10 @@ h6 {
   flex-direction: column;
   align-items: center;
   margin: auto 1em;
+  padding: 2em 0;
 }
 .banner-container .hero-image {
   content: url(../images/image-hero-mobile.webp);
-  max-width: 100%;
 }
 .banner-container .hero-btn {
   background: linear-gradient(to bottom, hsl(13, 100%, 64%), hsl(322, 87%, 55%));
@@ -109,16 +109,9 @@ h6 {
 }
 
 .card-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: auto 1em;
 }
 .card-container .card {
-  min-width: 100%;
-  height: auto;
-  margin: 1.25em;
   border: none;
 }
 .card-container .card-image {
@@ -158,6 +151,7 @@ h6 {
   justify-content: space-between;
   align-items: center;
   min-height: 7.5em;
+  margin-top: 5.38em;
 }
 .footer-container .footer-btn {
   background: linear-gradient(to bottom, hsl(237, 100%, 64%), hsl(322, 87%, 55%));
@@ -179,7 +173,46 @@ h6 {
 
 /*  Defaults to Small devices (landscape phones, 767px and below) */
 /* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  .nav-container {
+    margin: auto 2.44em;
+  }
+  .banner-container {
+    border: 1px dashed blue;
+    flex-direction: row;
+    align-items: center;
+    margin: auto 2.44em;
+    padding: 2em 0;
+  }
+  .banner-container .hero-image {
+    content: url(../images/image-hero-tablet.webp);
+  }
+  .card-container {
+    margin: auto 2em;
+  }
+}
 /* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  .nav-container {
+    margin: auto 8em;
+  }
+  .banner-container {
+    border: 1px dashed blue;
+    flex-direction: row;
+    align-items: center;
+    margin: auto 8em;
+    padding: 2em 0;
+  }
+  .banner-container .hero-image {
+    content: url(../images/image-hero-desktop.webp);
+    position: relative;
+    top: 1em;
+    right: 1em;
+  }
+  .card-container {
+    margin: auto 8em;
+  }
+}
 /* Extra large devices (large desktops, 1200px and up) */
 
 /*# sourceMappingURL=style.css.map */

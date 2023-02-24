@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: linear-gradient(to bottom, #ffffff, #f0f1ff);
+  background: linear-gradient(to bottom, #ffffff, #f0f1ff);
 }
 
 button {
@@ -65,7 +65,6 @@ h6 {
   font-weight: 800;
 }
 
-
 .nav-container {
   // border: 1px dashed red;
   display: flex;
@@ -75,7 +74,6 @@ h6 {
   inset: 0;
   margin: auto 1em;
   min-height: 5em;
-
 
   .nav-btn {
     background: $dkBlue;
@@ -89,11 +87,7 @@ h6 {
       background: $purple;
     }
   }
-
-
 }
-
-
 
 .banner-container {
   // border: 1px dashed blue;
@@ -101,10 +95,10 @@ h6 {
   flex-direction: column;
   align-items: center;
   margin: auto 1em;
+  padding: 2em 0;
 
   .hero-image {
     content: url(../images/image-hero-mobile.webp);
-    max-width: 100%;
   }
 
   .hero-btn {
@@ -123,20 +117,10 @@ h6 {
   }
 }
 
-
-
 .card-container {
-  // border: 1px dashed green;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: auto 1em;
 
   .card {
-    min-width: 100%;
-    height: auto;
-    margin: 1.25em;
     border: none;
   }
 
@@ -182,6 +166,7 @@ h6 {
   justify-content: space-between;
   align-items: center;
   min-height: 7.5em;
+  margin-top: 5.38em;
 
   .footer-btn {
     background: linear-gradient(to bottom, $lgradPurple, $lgradPink);
@@ -203,70 +188,55 @@ h6 {
 
   .footer-btn {
     margin-right: 1em;
-    ;
   }
 }
 
 /*  Defaults to Small devices (landscape phones, 767px and below) */
 
 /* Medium devices (tablets, 768px and up) */
-// @media screen and (min-width: 768px) {
-//   .content-container {
-//     margin: 0 6em;
-//   }
+@media screen and (min-width: 768px) {
+  .nav-container {
+    margin: auto 2.44em;
+  }
+  .banner-container {
+    border: 1px dashed blue;
+    flex-direction: row;
+    align-items: center;
+    margin: auto 2.44em;
+    padding: 2em 0;
 
-//   #top-btn {
-//     height: 3em;
-//     width: 8.75em;
-//   }
-
-//   .hero-image-container {
-//     position: absolute;
-//     min-width: 100%;
-//     overflow: hidden;
-//   }
-
-//   #hero-image {
-
-//     position: relative;
-//     height: auto;
-//     width: 40em;
-//     content: url(../images/image-hero-tablet.webp);
-//     top: -12.76em;
-//     right: -0.39em;
-//   }
-
-//   // .page-container {
-//   //   background: rgb(249, 198, 221);
-//   // }
-// }
+    .hero-image {
+      content: url(../images/image-hero-tablet.webp);
+    }
+  }
+  .card-container {
+    margin: auto 2em;
+  }
+}
 
 /* Large devices (desktops, 992px and up) */
-// @media screen and (min-width: 992px) {
-//   .content-container {
-//     margin: 0 6em;
-//   }
+@media screen and (min-width: 992px) {
+  .nav-container {
+    margin: auto 8em;
+  }
+  .banner-container {
+    border: 1px dashed blue;
+    flex-direction: row;
+    align-items: center;
+    margin: auto 8em;
+    padding: 2em 0;
 
-//   .hero-image-container {
-//     position: absolute;
-//     min-width: 100%;
-//     overflow: hidden;
-//   }
-
-//   #hero-image {
-
-//     position: relative;
-//     height: auto;
-//     width: 61.97rem;
-//     content: url(../images/image-hero-desktop.webp);
-//     top: -9.133em;
-//     right: -20.98em;
-//   }
-
-//   .page-container {
-//     background: rgb(176, 216, 176);
-//   }
-// }
+    .hero-image {
+      content: url(../images/image-hero-desktop.webp);
+      position: relative;
+      top: 1em;
+      right: 1em;
+    }
+  }
+  .card-container {
+    margin: auto 8em;
+  }
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 // @media screen and (min-width: 1200px) {
