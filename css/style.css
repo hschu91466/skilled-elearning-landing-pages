@@ -206,7 +206,7 @@ h6 {
     padding: 2em 0;
   }
   .banner-container .hero-image {
-    content: url(../images/image-hero-tablet.webp);
+    content: url(../images/image-hero-desktop.webp);
   }
   .card-container {
     margin: auto 8em;
