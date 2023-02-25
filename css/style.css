@@ -178,7 +178,6 @@ h6 {
     margin: auto 2.44em;
   }
   .banner-container {
-    border: 1px dashed blue;
     flex-direction: row;
     align-items: center;
     margin: auto 2.44em;
@@ -190,6 +189,10 @@ h6 {
   .card-container {
     margin: auto 2em;
   }
+  .footer-container > .skilled,
+  .footer-container > .footer-btn {
+    margin: auto 1.4em;
+  }
 }
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
@@ -197,20 +200,20 @@ h6 {
     margin: auto 8em;
   }
   .banner-container {
-    border: 1px dashed blue;
     flex-direction: row;
     align-items: center;
     margin: auto 8em;
     padding: 2em 0;
   }
   .banner-container .hero-image {
-    content: url(../images/image-hero-desktop.webp);
-    position: relative;
-    top: 1em;
-    right: 1em;
+    content: url(../images/image-hero-tablet.webp);
   }
   .card-container {
     margin: auto 8em;
+  }
+  .footer-container > .skilled,
+  .footer-container > .footer-btn {
+    margin: auto 4em;
   }
 }
 /* Extra large devices (large desktops, 1200px and up) */
