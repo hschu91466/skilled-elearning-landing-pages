@@ -50,6 +50,8 @@ Users should be able to:
 
 ### Useful resources
 
+Kevin Powell https://www.youtube.com/@KevinPowell has really great and fun tutorials for CSS.
+
 ## Author
 
 - Website - [Holly Schu](http://hollyschu.com/)
