@@ -202,15 +202,27 @@ h6 {
     // border: 1px dashed blue;
     flex-direction: row;
     align-items: center;
+    position: relative;
+    max-height: 100%;
+    max-width: 100%;
     margin: auto 2.44em;
     padding: 2em 0;
 
+    .hero-content {
+      // border: 1px dashed green;
+    }
+
     .hero-image {
-      content: url(../images/image-hero-tablet.webp);
+      // border: 1px dashed green;
+      content: url(../images/image-hero-tablet@2x.png);
+      position: absolute;
+      max-height: 150%;
+      top: -104px;
+      right: -195px;
     }
   }
   .card-container {
-    margin: auto 2em;
+    margin: 2em;
   }
   .footer-container > .skilled,
   .footer-container > .footer-btn {
@@ -221,21 +233,27 @@ h6 {
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
   .nav-container {
-    margin: auto 8em;
+    margin: 2em 8em;
   }
   .banner-container {
     // border: 1px dashed blue;
     flex-direction: row;
     align-items: center;
     margin: auto 8em;
-    padding: 2em 0;
+    padding: 5em 0;
 
     .hero-image {
       content: url(../images/image-hero-desktop.webp);
+      position: absolute;
+      max-height: 143%;
+      // top: -161px;
+      // right: -276px;
+      top: -10.7em;
+      right: -17.3em;
     }
   }
   .card-container {
-    margin: auto 8em;
+    margin: 2.5em 8em;
   }
   .footer-container > .skilled,
   .footer-container > .footer-btn {
